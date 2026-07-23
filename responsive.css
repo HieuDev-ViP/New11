@@ -1,0 +1,232 @@
+@media (max-width: 980px){
+  .site-header{
+    width:min(var(--max), calc(100% - 16px));
+  }
+
+  .hero-top,
+  .music-card,
+  .donate-card,
+  .about-grid{
+    grid-template-columns:1fr;
+  }
+
+  .hero-copy{
+    text-align:center;
+    align-items:center;
+  }
+
+  .social-grid{
+    grid-template-columns:repeat(2, minmax(0, 1fr));
+  }
+
+  .about-intro{
+    justify-content:center;
+    text-align:center;
+  }
+
+  .music-card{
+    justify-items:center;
+  }
+
+  .music-body{
+    width:100%;
+    text-align:center;
+    align-items:center;
+  }
+
+  .music-head{
+    max-width:560px;
+  }
+
+  .time-row,
+  .volume-row{
+    width:min(100%, 560px);
+  }
+
+  .donate-info{
+    align-items:center;
+    text-align:center;
+  }
+
+  .account-row{
+    width:min(100%, 560px);
+    margin-inline:auto;
+  }
+
+  .account-actions{
+    justify-content:center;
+  }
+}
+
+@media (max-width: 760px){
+  .desktop-nav{
+    display:none;
+  }
+
+  .site-header{
+    top:10px;
+    padding:12px 14px;
+    border-radius:22px;
+  }
+
+  .page{
+    width:min(var(--max), calc(100% - 16px));
+    padding-top:14px;
+  }
+
+  .section{
+    padding:22px 0;
+  }
+
+  .hero-card,
+  .about-card,
+  .music-card,
+  .donate-card{
+    padding:16px;
+  }
+
+  .avatar-frame{
+    width:min(186px, 72vw);
+  }
+
+  .hero-copy h1{
+    font-size:clamp(1.95rem, 8vw, 2.95rem);
+  }
+
+  .social-grid{
+    gap:12px;
+  }
+
+  .social-card{
+    min-height:84px;
+    padding:14px;
+  }
+
+  .social-icon{
+    width:48px;height:48px;border-radius:14px;
+  }
+
+  .gallery-grid{
+    gap:12px;
+  }
+
+  .music-cover-wrap{
+    max-width:360px;
+    margin-inline:auto;
+  }
+
+  .controls{
+    gap:10px;
+  }
+
+  .control-btn{
+    width:50px;height:50px;border-radius:16px;
+  }
+
+  .control-btn--play{
+    width:66px;height:66px;border-radius:20px;
+  }
+
+  .account-row{
+    padding:12px;
+  }
+
+  .toast{
+    bottom:78px;
+    max-width:92vw;
+    text-align:center;
+  }
+
+  .lightbox{
+    padding:14px;
+  }
+
+  .lightbox-close{
+    top:14px;
+    right:14px;
+  }
+
+  .lightbox-nav--prev{left:14px}
+  .lightbox-nav--next{right:14px}
+}
+
+@media (max-width: 520px){
+  .gallery-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+
+  .social-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .music-head{
+    width:100%;
+  }
+
+  .time-row{
+    grid-template-columns:38px minmax(0,1fr) 38px;
+    gap:8px;
+  }
+
+  .time-row span{
+    font-size:.86rem;
+  }
+
+  .donate-qr img{
+    max-width:240px;
+  }
+
+  .account-row{
+    grid-template-columns:1fr;
+  }
+
+  .account-number{
+    text-align:center;
+  }
+
+  .account-actions{
+    width:100%;
+    flex-direction:column;
+  }
+
+  .copy-btn,
+  .qr-btn{
+    width:100%;
+    justify-content:center;
+  }
+}
+
+@media (max-width: 380px){
+  .social-grid,
+  .gallery-grid{
+    grid-template-columns:1fr;
+  }
+
+  .brand-mark{
+    width:42px;height:42px;border-radius:14px;
+  }
+
+  .brand-text strong{
+    font-size:1rem;
+  }
+
+  .hero-card,
+  .about-card,
+  .music-card,
+  .donate-card{
+    padding:14px;
+  }
+
+  .avatar-frame{
+    width:min(172px, 72vw);
+  }
+
+  .chip{
+    padding:9px 12px;
+    font-size:.84rem;
+  }
+
+  .icon-btn{
+    width:48px;height:48px;border-radius:16px;
+  }
+}
